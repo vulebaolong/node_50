@@ -1,0 +1,69 @@
+
+-- Kiểm tra version
+SELECT VERSION();
+
+-- database
+CREATE DATABASE IF NOT EXISTS db_test; -- tạo database
+DROP DATABASE db_test; -- xoá database
+USE db_cyber_community;
+
+-- table template
+CREATE TABLE `TABLE_TEMPLATE` (
+	`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, -- mặc định luôn luôn có
+	
+	
+	-- mặc định luôn luôn có
+	`deletedBy` INT NOT NULL DEFAULT 0,
+	`isDeleted` TINYINT(1) NOT NULL DEFAULT 0,
+	`deletedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- table
+-- PRIMARY KEY: kết hợp của NOT NULL và UNIQUE
+CREATE TABLE `Roles` (
+	`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, -- mặc định luôn luôn có
+	
+	`name` VARCHAR(255),
+	`description` VARCHAR(255),
+	`isActive` BOOL DEFAULT 1,
+	
+	-- mặc định luôn luôn có
+	`deletedBy` INT NOT NULL DEFAULT 0,
+	`isDeleted` TINYINT(1) NOT NULL DEFAULT 0,
+	`deletedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+-- Đổi kiểu
+ALTER TABLE `Roles`
+MODIFY COLUMN `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT;
+
+-- Thêm dữ liệu
+INSERT INTO `Roles` (`name`, `description`) VALUES
+('ROLE_ADMIN', 'Quản Trị Hệ Thống'),
+('ROLE_USER', 'Người Dùng Hệ Thống')
+
+DROP TABLE `Roles`; -- xoá table
+
+CREATE TABLE `Users` (
+	`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, -- mặc định luôn luôn có
+	
+	`email` VARCHAR(255) NOT NULL UNIQUE,
+	`fullName` VARCHAR(255),
+	`avatar` VARCHAR(255),
+	`password` VARCHAR(255),
+	`facebookId` VARCHAR(255) UNIQUE,
+	`googleId` VARCHAR(255) UNIQUE,
+	`roleId` INT NOT NULL DEFAULT 2,
+	
+	-- mặc định luôn luôn có
+	`deletedBy` INT NOT NULL DEFAULT 0,
+	`isDeleted` TINYINT(1) NOT NULL DEFAULT 0,
+	`deletedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
