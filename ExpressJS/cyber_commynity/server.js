@@ -1,13 +1,15 @@
 import express from "express";
-import pool from "./src/common/mysql2/pool.mysql2.js";
+import pool from "./src/common/mysql2/pool.mysql2";
+import sequelize, { models } from "./src/common/sequelize/connect.sequelize";
+import { DataTypes } from "sequelize";
+import rootRouter from "./src/routers/root.router";
 
 const app = express();
 
 app.use(express.json());
 
-app.get(`/`, (request, response, next) => {
-   response.json(`hello word`);
-});
+app.use(rootRouter)
+
 
 // tạo một api
 // Phương thức get
@@ -51,6 +53,81 @@ app.get(`/mysql2`, async (req, res, next) => {
    console.log({ rows, fields });
 
    res.json(rows);
+});
+
+// SEQUELIZE (ORM)
+const Permissions = sequelize.define(
+   "Permissions",
+   {
+      id: {
+         type: DataTypes.INTEGER,
+         primaryKey: true,
+         autoIncrement: true,
+      },
+      name: {
+         type: DataTypes.STRING,
+         allowNull: false,
+      },
+      endpoint: {
+         type: DataTypes.STRING,
+         allowNull: false,
+      },
+      method: {
+         type: DataTypes.STRING,
+         allowNull: false,
+      },
+      module: {
+         type: DataTypes.STRING,
+         allowNull: false,
+      },
+      deletedBy: {
+         type: DataTypes.INTEGER,
+         allowNull: false,
+         defaultValue: 0,
+      },
+      isDeleted: {
+         type: DataTypes.BOOLEAN,
+         allowNull: false,
+         defaultValue: false,
+      },
+      deletedAt: {
+         type: "TIMESTAMP",
+         allowNull: true,
+         defaultValue: null,
+      },
+      createdAt: {
+         type: "TIMESTAMP",
+         defaultValue: sequelize.literal("CURRENT_TIMESTAMP"),
+         allowNull: false,
+      },
+      updatedAt: {
+         type: "TIMESTAMP",
+         defaultValue: sequelize.literal("CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"),
+         allowNull: false,
+      },
+   },
+   {
+      tableName: "Permissions",
+      timestamp: false,
+   }
+);
+// CODE FIRST
+// đồng bộ code => db
+Permissions.sync({ alter: true });
+
+// DATABASE FIRST
+// đồng bộ từ db => code
+// npx sequelize-auto -h localhost -d db_cyber_community -u root -x 1234 -p 3307  --dialect mysql -o src/models -a src/models/additional.json -l esm
+
+app.get(`/sequelize`, async (req, res, next) => {
+   // Sử dụng model Permission do mình tự tạo (CODE FIRST)
+   const permissions = await Permissions.findAll({ raw: true });
+   console.log({ permissions });
+
+   // Sử dụng model do sequelize-auto tạo ra (DATABASE FIST)
+   const users = await models.Users.findAll({ raw: true });
+
+   res.json({ users, permissions });
 });
 
 app.listen(3069, () => {
