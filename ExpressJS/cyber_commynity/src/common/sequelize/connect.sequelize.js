@@ -1,8 +1,9 @@
 import { Sequelize } from "sequelize";
 import initModels from "../../models/init-models";
+import { DATABASE_URL } from "../constant/app.constant";
 
-const sequelize = new Sequelize("mysql://root:1234@localhost:3307/db_cyber_community");
-export const models = initModels(sequelize)
+const sequelize = new Sequelize(DATABASE_URL, { logging: false });
+export const models = initModels(sequelize);
 
 try {
    await sequelize.authenticate();
