@@ -1,6 +1,8 @@
+import { BadRequestException } from "../common/helpers/exception.helper";
 import pool from "../common/mysql2/pool.mysql2";
 import prisma from "../common/prisma/init.prisma";
 import { models } from "../common/sequelize/connect.sequelize";
+import logger from "../common/winston/init.winston";
 import Permissions from "../models/PermisionByMe";
 
 const demoService = {
@@ -39,13 +41,33 @@ const demoService = {
       const permissions = await Permissions.findAll({ raw: true });
       console.log({ permissions });
 
+      throw new BadRequestException("sequelize");
+
       // Sử dụng model do sequelize-auto tạo ra (DATABASE_URL FIST)
       const users = await models.Users.findAll({ raw: true });
       return { users, permissions };
    },
-   prisma: async () => {
+   prisma: async (req) => {
+      // LỖI KHÔNG KIỂM SOÁT ĐƯỢC
+      // req.a.a
+
+      // LỖI KIỂM SOÁT ĐƯỢC
+      const passDB = 1234;
+      const passUser = 1234;
+      if (passDB !== passUser) {
+         console.log(`trả lỗi`);
+         logger.error("Mật khẩu không đúng");
+         throw new BadRequestException("Mật khẩu không đúng");
+      } else {
+         logger.info(`Mật Khẩu Chính Xác`);
+      }
+
       const userList = await prisma.users.findMany();
       return userList;
+   },
+   middleware: (req) => {
+      req.a.a;
+      return `middleware`;
    },
 };
 

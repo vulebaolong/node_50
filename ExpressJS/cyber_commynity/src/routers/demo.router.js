@@ -20,13 +20,36 @@ demoRouter.delete(`/headers`, demoController.headers);
 
 // Nhận dữ liệu ở body
 // Thường dùng khi: tạo, hoặc dữ liệu lớn
-demoRouter.post(`/body`,demoController.body);
+demoRouter.post(`/body`, demoController.body);
 
 // MYSQL2: để tương tác với databsse
 demoRouter.get(`/mysql2`, demoController.mysql2);
 
-demoRouter.get(`/sequelize`,demoController.sequelize );
+demoRouter.get(`/sequelize`, demoController.sequelize);
 
-demoRouter.get(`/prisma`,demoController.prisma);
+demoRouter.get(`/prisma`, demoController.prisma);
+
+demoRouter.get(
+   `/middleware`,
+   (req, res, next) => {
+      console.log(`middleware 1`);
+      const payload = `payload của m1`;
+      req.payload = payload;
+      next();
+   },
+   (req, res, next) => {
+      console.log(`middleware 2: ${req.payload}`);
+      // next(123);
+      next();
+   },
+   (req, res, next) => {
+      console.log(`middleware 3`);
+      next();
+   },
+   // (err, req, res, next) => {
+   //    console.log(err);
+   // },
+   demoController.middleware
+);
 
 export default demoRouter;

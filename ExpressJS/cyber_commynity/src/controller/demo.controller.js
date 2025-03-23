@@ -1,43 +1,96 @@
-import { responseSuccess } from "../common/helpers/reponse.helper";
+import { responseError, responseSuccess } from "../common/helpers/reponse.helper";
 import demoService from "../services/demo.service";
 
 const demoController = {
-   query: (request, response, next) => {
-      const result = demoService.query();
-      response.json(result);
+   query: async (req, res, next) => {
+      try {
+         const result = await demoService.query(req, res, next);
+         const response = responseSuccess(result, `Lấy querythành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
-   helloWord: (request, response, next) => {
-      const result = demoService.helloWord();
-      response.json(result);
+   helloWord: async (req, res, next) => {
+      try {
+         const result = await demoService.helloWord(req, res, next);
+         const response = responseSuccess(result, `helloWord thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
-   checkServer: (request, response, next) => {
-      const result = demoService.checkServer();
-      response.json(result);
+   checkServer: async (req, res, next) => {
+      try {
+         const result = await demoService.checkServer(req, res, next);
+         const response = responseSuccess(result, `checkServer thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
-   param: (req, res, next) => {
-      const result = demoService.param(req, res, next);
-      res.json(result);
+   param: async (req, res, next) => {
+      try {
+         const result = await demoService.param(req, res, next);
+         const response = responseSuccess(result, `Lấy param thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
-   headers: (req, res, next) => {
-      const reuslt = demoService.headers(req, res, next);
-      res.json(reuslt);
+   headers: async (req, res, next) => {
+      try {
+         const result = await demoService.headers(req, res, next);
+         const response = responseSuccess(result, `Lấy headers thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
-   body: (req, res, next) => {
-      const result = demoService.body(req, res, next);
-      res.json(result);
+   body: async (req, res, next) => {
+      try {
+         const result = await demoService.body(req, res, next);
+         const response = responseSuccess(result, `Lấy bodythành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
    mysql2: async (req, res, next) => {
-      const result = await demoService.mysql2(req, res, next);
-      res.json(result);
+      try {
+         const result = await demoService.mysql2(req, res, next);
+         const response = responseSuccess(result, `Lấy mysql2 thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
    sequelize: async (req, res, next) => {
-      const result = await demoService.sequelize(req, res, next);
-      res.json(result);
+      try {
+         const result = await demoService.sequelize(req, res, next);
+         const response = responseSuccess(result, `sequelize thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
    prisma: async (req, res, next) => {
-      const result = await demoService.prisma(req, res, next);
-      const response = responseSuccess(result, `Lấy danh sách user thành công`);
-      res.status(response.statusCode).json(response);
+      try {
+         const result = await demoService.prisma(req, res, next);
+         const response = responseSuccess(result, `prisma thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
+   },
+   middleware: async (req, res, next) => {
+      try {
+         const result = await demoService.middleware(req, res, next);
+         const response = responseSuccess(result, `middleware thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    },
 };
 
