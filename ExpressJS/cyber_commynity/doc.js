@@ -1,3 +1,9 @@
+// Cập nhật lại prisma khi thay đổi db
+// npx prisma db pull: lỗi tất cả cấu trúc db (table, cột) đưa vào trong file prisma/schema.prisma
+// npx prisma generate: cập nhật object dùng bên trong code, khi sử dụng prisma chấm
+
+
+
 /**
 
 Các thứ viện đã cài:
@@ -18,6 +24,10 @@ dotenv: thư viện giúp lấy biến trong file .env đưa vào dự án (proc
 winston: ghi log vào file hoặc console(terminal)
 chalk: thư viện tô màu cho chữ trong terminal
 morgan: thư viện bắt tất cả các API gọi tới BE, dựa vào winston để có log đẹp dành cho API
+
+cors: để fix lỗi CORS cho phép domain FE nào sử dụng
+
+bcrypt: mã hoá password
 
 
 
@@ -56,8 +66,10 @@ morgan: thư viện bắt tất cả các API gọi tới BE, dựa vào winston
 
  */
 
-/**    // 200: thành công
+/**    
+      // 200: thành công
        // 400: thất bại
        // 404: tìm không thấy (not found)
        // 500: lỗi server (lỗi không kiểm soát được)
   */
+

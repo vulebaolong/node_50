@@ -12,3 +12,87 @@
 {"level":"info","message":"GET /demo/mysql2 200 3197 26.480ms","tag":"API"}
 {"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
 {"level":"info","message":"GET /demo/mysql2 200 3197 23.956ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/ 200 120 7.548ms","tag":" API "}
+{"level":"info","message":"GET /article/ 200 120 2.727ms","tag":" API "}
+{"level":"info","message":"GET /article/ 200 120 2.436ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=3 200 120 1.147ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=3 200 120 4.064ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=3 500 1621 26.448ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=3 200 979 69.882ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=2&pageSize=3 200 950 14.768ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1495 20.572ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=-100&pageSize=5 500 1490 13.452ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=-100&pageSize=5 200 1493 92.956ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 80.949ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5&search=development 200 1489 40.906ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5&search=development 200 445 31.133ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5&search=about 200 1495 16.185ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 25.168ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 26.591ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 3.493ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 25.498ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.859ms","tag":" API "}
+{"level":"info","message":"OPTIONS /demo/mysql2 200 8 1.842ms","tag":" API "}
+{"level":"info","message":"OPTIONS /demo/mysql2 200 8 2.246ms","tag":" API "}
+{"level":"info","message":"OPTIONS /demo/mysql2 200 8 2.182ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 0.894ms","tag":" API "}
+{"level":"info","message":"GET /demo/mysql2 304 undefined 19.422ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 0.717ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 0.920ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 0.897ms","tag":" API "}
+{"level":"info","message":"GET /demo/mysql2 304 undefined 15.684ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 1.190ms","tag":" API "}
+{"level":"info","message":"GET /demo/mysql2 304 undefined 14.674ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 0.920ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 1.245ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 0.599ms","tag":" API "}
+{"level":"info","message":"GET /demo/mysql2 304 undefined 12.906ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /register 404 148 4.207ms","tag":" API "}
+{"level":"info","message":"POST /auth/register 200 118 3.881ms","tag":" API "}
+{"level":"info","message":"POST /auth/register 200 118 0.567ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/register 200 118 2.477ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/register 200 118 40.475ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/register 200 364 33.964ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/register 400 514 70.459ms","tag":" API "}
+{"level":"info","message":"POST /auth/register 500 465 10.785ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/register 200 421 107.113ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/register 400 514 90.269ms","tag":" API "}
+{"level":"info","message":"POST /auth/register 200 347 87.643ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
