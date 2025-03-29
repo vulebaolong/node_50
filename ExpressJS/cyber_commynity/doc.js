@@ -16,8 +16,8 @@ prisma: ORM giúp tương tác với db (giống với sequelize)
 dotenv: thư viện giúp lấy biến trong file .env đưa vào dự án (process.env)
 
 winston: ghi log vào file hoặc console(terminal)
-
 chalk: thư viện tô màu cho chữ trong terminal
+morgan: thư viện bắt tất cả các API gọi tới BE, dựa vào winston để có log đẹp dành cho API
 
 
 
