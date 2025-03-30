@@ -1,6 +1,9 @@
 import { BadRequestException } from "../common/helpers/exception.helper";
 import prisma from "../common/prisma/init.prisma";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import tokenService from "./token.service";
+import logger from "../common/winston/init.winston";
 
 const authService = {
    register: async (req) => {
@@ -19,7 +22,7 @@ const authService = {
       console.log({ salt });
       const hashPassword = bcrypt.hashSync(password, salt);
 
-      token => base64
+      (token) => base64;
       // mã hoá chữ ký
 
       const userNew = await prisma.users.create({
@@ -30,9 +33,32 @@ const authService = {
          },
       });
 
-      delete userNew.password
+      delete userNew.password;
 
       return userNew;
+   },
+   login: async (req) => {
+      const { email, password } = req.body;
+
+      const userExsit = await prisma.users.findUnique({
+         where: {
+            email: email,
+         },
+      });
+      if (!userExsit) throw new BadRequestException(`Tài khoản chưa tồn tại, vui lòng đăng ký ::1`);
+      // if (!userExsit) throw new BadRequestException(`Tài khoản không hợp lệ ::1`);
+
+      const isPassword = bcrypt.compareSync(password, userExsit.password);
+      if (!isPassword) {
+         // logic kiểm tra nếu đăng nhập quá 3 lần, lưu dấu vết hoặc cho vào blacklist để theo
+         logger.error(`${userExsit.id} đăng nhập quá 3 lần, lưu dấu vết hoặc cho vào blacklist`);
+         throw new BadRequestException(`Mật khẩu không chính xác ::2`);
+      }
+      // if (!isPassword) throw new BadRequestException(`Tài khoản không hợp lệ ::2`);
+
+      const tokens = tokenService.createTokens(userExsit.id);
+
+      return tokens;
    },
 };
 

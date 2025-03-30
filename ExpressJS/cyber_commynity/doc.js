@@ -2,7 +2,20 @@
 // npx prisma db pull: lỗi tất cả cấu trúc db (table, cột) đưa vào trong file prisma/schema.prisma
 // npx prisma generate: cập nhật object dùng bên trong code, khi sử dụng prisma chấm
 
+// BƯỚC CUNG CẤP OTP
+// const OTP = "kaka1234";
+// const thoi_gian_het_han_otp = `60s`;
+// const otpToken = jwt.sign({ userId: userId }, OTP, { expiresIn: thoi_gian_het_han_otp });
+// otpToken: lưu vào DB
+// OTP: quăng vào email cho người dùng
 
+// BƯỚC XÁC THỰC
+// OTP: nhận từ người dùng lấy ở email ra và gửi cho BE
+// otpToken: ở DB
+// const isOTP = jwt.verify(otpToken, OTP);
+// jwt.decode();
+
+// if (!isOTP) throw new Error("OTP không hợp lệ");
 
 /**
 
@@ -28,6 +41,8 @@ morgan: thư viện bắt tất cả các API gọi tới BE, dựa vào winston
 cors: để fix lỗi CORS cho phép domain FE nào sử dụng
 
 bcrypt: mã hoá password
+
+jsonwebtoken: tạo token, với thư viện jsonwebtoken
 
 
 
@@ -72,4 +87,3 @@ bcrypt: mã hoá password
        // 404: tìm không thấy (not found)
        // 500: lỗi server (lỗi không kiểm soát được)
   */
-

@@ -96,3 +96,35 @@
 {"level":"info","message":"POST /auth/register 400 514 90.269ms","tag":" API "}
 {"level":"info","message":"POST /auth/register 200 347 87.643ms","tag":" API "}
 {"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/login 200 118 2.590ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/login 200 118 3.155ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/login 200 424 88.517ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 400 463 78.934ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 400 505 6.588ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/login 400 513 38.719ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 273 79.192ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/login 200 273 82.204ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/login 200 273 88.343ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
