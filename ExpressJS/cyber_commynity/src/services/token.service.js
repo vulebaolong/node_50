@@ -4,7 +4,6 @@ import { ACCESS_TOKEN_EXPIRES, ACCESS_TOKEN_SECRET } from "../common/constant/ap
 const tokenService = {
    createTokens: (userId) => {
       const accessToken = jwt.sign({ userId: userId }, ACCESS_TOKEN_SECRET, { expiresIn: ACCESS_TOKEN_EXPIRES });
-
       return { accessToken };
    },
 };

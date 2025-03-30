@@ -10,7 +10,7 @@ const articleController = {
       } catch (error) {
          next(error);
       }
-   }
-}
+   },
+};
 
-export default articleController
+export default articleController;
