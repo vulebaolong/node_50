@@ -5,8 +5,10 @@ import prisma from "../prisma/init.prisma";
 
 const protect = async (req, res, next) => {
    try {
-      const [type, token] = req.headers.authorization?.split(" ");
+      const authHeader = req.headers.authorization || ""
+      const [type, token] = authHeader.split(" ");
       if (!token) throw new UnAuthorizedException(`Không có token`);
+      if(type !== "Bearer") throw new UnAuthorizedException(`Loại token không hợp lệ`);
 
       const decode = jwt.verify(token, ACCESS_TOKEN_SECRET);
       console.log(decode);

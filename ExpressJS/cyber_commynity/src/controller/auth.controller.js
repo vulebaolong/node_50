@@ -20,8 +20,16 @@ const authController = {
       } catch (error) {
          next(error);
       }
+   },
+   refreshToken: async (req, res, next) => {
+      try {
+         const result = await authService.refreshToken(req);
+         const response = responseSuccess(result, `Làm mới token thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    }
-
 }
 
 export default authController

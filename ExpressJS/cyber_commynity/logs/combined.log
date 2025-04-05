@@ -219,3 +219,67 @@
 {"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
 {"level":"info","message":"GET /demo/send-email 200 119 2828.089ms","tag":" API "}
 {"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 500 1837 6.019ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 401 1750 7.141ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 401 1722 4.878ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/login 200 435 102.839ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 97.434ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 88.191ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 26.758ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 82.605ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 21.814ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 404 152 1.566ms","tag":" API "}
+{"level":"info","message":"GET /article 403 1717 4.370ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 1.237ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 58.517ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.283ms","tag":" API "}
+{"level":"error","message":"15 đăng nhập quá 3 lần, lưu dấu vết hoặc cho vào blacklist","tag":"SYSTEM"}
+{"level":"info","message":"POST /auth/login 400 471 120.587ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 58.847ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 404 152 1.740ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 12.698ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.196ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 404 152 0.636ms","tag":" API "}
+{"level":"info","message":"GET /article 403 1717 5.098ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 3.379ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 19.258ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.168ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 67.468ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 404 152 0.740ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 34.999ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.542ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 404 152 0.887ms","tag":" API "}
+{"level":"info","message":"GET /article 403 1717 1.614ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 0.975ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 14.102ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 1.266ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 404 152 0.489ms","tag":" API "}
+{"level":"info","message":"GET /article 403 1717 1.590ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 13.751ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 21.174ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.613ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 404 152 0.271ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 10.621ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.352ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 404 152 0.484ms","tag":" API "}
+{"level":"info","message":"GET /article 403 1717 3.709ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 0.763ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 14.436ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.224ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.895ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 1.444ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 1.958ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 3.727ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 56.829ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 3.591ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.174ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 24.106ms","tag":" API "}
