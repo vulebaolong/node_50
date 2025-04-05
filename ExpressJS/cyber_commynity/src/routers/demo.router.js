@@ -29,27 +29,29 @@ demoRouter.get(`/sequelize`, demoController.sequelize);
 
 demoRouter.get(`/prisma`, demoController.prisma);
 
+demoRouter.get("/send-email", demoController.sendEmail);
+
 demoRouter.get(
-   `/middleware`,
-   (req, res, next) => {
-      console.log(`middleware 1`);
-      const payload = `payload của m1`;
-      req.payload = payload;
-      next();
-   },
-   (req, res, next) => {
-      console.log(`middleware 2: ${req.payload}`);
-      // next(123);
-      next();
-   },
-   (req, res, next) => {
-      console.log(`middleware 3`);
-      next();
-   },
-   // (err, req, res, next) => {
-   //    console.log(err);
-   // },
-   demoController.middleware
+  `/middleware`,
+  (req, res, next) => {
+    console.log(`middleware 1`);
+    const payload = `payload của m1`;
+    req.payload = payload;
+    next();
+  },
+  (req, res, next) => {
+    console.log(`middleware 2: ${req.payload}`);
+    // next(123);
+    next();
+  },
+  (req, res, next) => {
+    console.log(`middleware 3`);
+    next();
+  },
+  // (err, req, res, next) => {
+  //    console.log(err);
+  // },
+  demoController.middleware
 );
 
 export default demoRouter;
