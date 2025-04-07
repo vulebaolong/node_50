@@ -4,7 +4,8 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import tokenService from "./token.service";
 import logger from "../common/winston/init.winston";
-import { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } from "../common/constant/app.constant";
+import { ACCESS_TOKEN_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, REFRESH_TOKEN_SECRET } from "../common/constant/app.constant";
+import { OAuth2Client } from "google-auth-library";
 
 const authService = {
    register: async (req) => {
@@ -49,6 +50,8 @@ const authService = {
       if (!userExsit) throw new BadRequestException(`Tài khoản chưa tồn tại, vui lòng đăng ký ::1`);
       // if (!userExsit) throw new BadRequestException(`Tài khoản không hợp lệ ::1`);
 
+      if(!userExsit?.password) throw new BadRequestException(`Vui lòng đăng nhập bằng google hoặc facebook, để cập nhật mật khẩu mới`);
+
       const isPassword = bcrypt.compareSync(password, userExsit.password);
       if (!isPassword) {
          // logic kiểm tra nếu đăng nhập quá 3 lần, lưu dấu vết hoặc cho vào blacklist để theo
@@ -74,6 +77,55 @@ const authService = {
       const tokens = tokenService.createTokens(decodeRefreshToken.userId);
 
       return tokens;
+   },
+   getInfo: async (req) => {
+      delete req.user.password;
+      return req.user;
+   },
+   googleLogin: async (req) => {
+      const { code } = req.body;
+      console.log({ code });
+
+      const oAuth2Client = new OAuth2Client(GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, "postmessage");
+
+      const { tokens } = await oAuth2Client.getToken(code);
+      // console.log({ abc });
+
+      const googleDecode = jwt.decode(tokens.id_token);
+      console.log({ googleDecode });
+
+      // email_verified: có ý nghĩa là email của google có xác thực hay chưa
+      // Nếu email_verified = false thì sao?
+      // Có thể là:
+      // Email được thêm qua ứng dụng bên thứ ba, chưa được xác thực.
+      // Email là alias chưa xác minh.
+      // Hoặc là lỗi hoặc cấu hình sai từ phía client.
+      if (googleDecode.email_verified === false) throw new BadRequestException(`Email chưa hợp lệ`);
+
+      let userExist = await prisma.users.findUnique({
+         where: {
+            email: googleDecode.email,
+         },
+      });
+
+      // 1 - userExist có tồn tại: sẽ có id
+      // 2 - userExist chưa có thì sẽ chạy vào if, tạo người dùng mới => có id
+      if (!userExist) {
+         userExist = await prisma.users.create({
+            data: {
+               email: googleDecode.email,
+               fullName: googleDecode.name,
+               avatar: googleDecode.picture,
+               googleId: googleDecode.sub,
+            },
+         });
+      }
+
+      // nếu code chạy được xuống đây, thì userExist luôn tồn tại => có id
+
+      const tokensSystem = tokenService.createTokens(userExist.id)
+
+      return tokensSystem;
    },
 };
 

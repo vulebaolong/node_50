@@ -29,6 +29,24 @@ const authController = {
       } catch (error) {
          next(error);
       }
+   },
+   getInfo: async (req, res, next) => {
+      try {
+         const result = await authService.getInfo(req);
+         const response = responseSuccess(result, `Lấy thông tin user thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
+   },
+   googleLogin: async (req, res, next) => {
+      try {
+         const result = await authService.googleLogin(req);
+         const response = responseSuccess(result, `Google login thành công`);
+         res.status(response.statusCode).json(response);
+      } catch (error) {
+         next(error);
+      }
    }
 }
 

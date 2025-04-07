@@ -283,3 +283,175 @@
 {"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 3.591ms","tag":" API "}
 {"level":"info","message":"POST /auth/refresh-token 200 438 2.174ms","tag":" API "}
 {"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 24.106ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 401 1722 7.890ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 403 1717 11.206ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.376ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 432 116.849ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 403 1717 12.302ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.300ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 358 49.284ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 403 1717 2.448ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 1.050ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 500 975 17.923ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 12.536ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.599ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 500 975 3.898ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 9.301ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.243ms","tag":" API "}
+{"level":"error","message":"15 đăng nhập quá 3 lần, lưu dấu vết hoặc cho vào blacklist","tag":"SYSTEM"}
+{"level":"info","message":"POST /auth/login 400 471 68.442ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 70.454ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 358 8.002ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.313ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 19.564ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.254ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.342ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 1.377ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 1.089ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 1.041ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.901ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.629ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.731ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.872ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.842ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 2.958ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.629ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.714ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 1.006ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.811ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=15&EIO=4&transport=websocket 404 149 0.694ms","tag":" API "}
+{"level":"info","message":"POST /auth/google-login 404 157 4.148ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/google-login 200 112 1.593ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 401 1743 1.626ms","tag":" API "}
+{"level":"info","message":"GET /article 401 1743 2.134ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.653ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/google-login 200 112 17.268ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 401 1743 2.119ms","tag":" API "}
+{"level":"info","message":"GET /article 401 1743 0.731ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.560ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/google-login 200 112 292.298ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 401 1743 1.457ms","tag":" API "}
+{"level":"info","message":"GET /article 401 1743 1.220ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.518ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/google-login 500 542 320.173ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/google-login 200 112 312.855ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 401 1743 1.640ms","tag":" API "}
+{"level":"info","message":"GET /article 401 1743 0.770ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.515ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/google-login 200 434 430.570ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 493 4.708ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 2.724ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 9.045ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 1.252ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.231ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.758ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.830ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.280ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.905ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.693ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.081ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.783ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.450ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.690ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.150ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.940ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.105ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.460ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.890ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.905ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.762ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.582ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.886ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.685ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.347ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.634ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.429ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.464ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.669ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.581ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.761ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.712ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.244ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.930ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.534ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.176ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.383ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.479ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.191ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.475ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.287ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.620ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.367ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.930ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 2.802ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.370ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.626ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.760ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.022ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.865ms","tag":" API "}
+{"level":"info","message":"POST /auth/google-login 200 434 300.097ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 493 3.693ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.444ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 26.774ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 404 143 0.284ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.363ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.571ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.056ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.680ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.597ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.464ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.694ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.691ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.696ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.165ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 1.353ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.222ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.255ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.312ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.200ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.977ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 3.133ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.476ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.475ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.485ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.466ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.367ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.336ms","tag":" API "}
+{"level":"info","message":"GET /socket.io/?userId=19&EIO=4&transport=websocket 404 149 0.366ms","tag":" API "}
+{"level":"info","message":"OPTIONS /demo/mysql2 204 0 0.441ms","tag":" API "}
+{"level":"info","message":"GET /demo/mysql2 200 2966 50.566ms","tag":" API "}
+{"level":"info","message":"GET /demo/mysql2 304 undefined 11.066ms","tag":" API "}
+{"level":"info","message":"GET /favicon.ico 404 150 0.252ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 10.648ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 3.208ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 65.495ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 12.272ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.903ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 34.837ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 6.898ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 1.632ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 30.827ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/refresh-token 200 438 4.069ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 31.220ms","tag":" API "}

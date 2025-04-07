@@ -230,9 +230,23 @@ VALUES
 ( 'Content about API design...', 'https://picsum.photos/seed/9/600/400', 18, 3, '2024-01-09 16:00:00', '2024-01-09 16:00:00'),
 ('Predictions about web development...', 'https://picsum.photos/seed/10/600/400', 21, 1, '2024-01-10 17:00:00', '2024-01-10 17:00:00');
 
-
-
-
+CREATE TABLE `RolePermission` (
+	`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, -- mặc định luôn luôn có
+	
+	`roleId` INT NOT NULL,
+	`permissionId` INT NOT NULL,
+	`isActive` BOOLEAN DEFAULT 1,
+	
+	FOREIGN KEY (`roleId`) REFERENCES Roles (`id`),
+	FOREIGN KEY (`permissionId`) REFERENCES Permissions (`id`),
+	
+	-- mặc định luôn luôn có
+	`deletedBy` INT NOT NULL DEFAULT 0,
+	`isDeleted` TINYINT(1) NOT NULL DEFAULT 0,
+	`deletedAt` TIMESTAMP NULL DEFAULT NULL,
+	`createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
 
 
 
