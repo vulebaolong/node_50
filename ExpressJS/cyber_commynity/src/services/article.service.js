@@ -2,7 +2,7 @@ import prisma from "../common/prisma/init.prisma";
 
 const articleService = {
    findAll: async (req) => {
-      console.log("dữ liệu ở service", req.user);
+      // console.log("dữ liệu ở service", req.user);
 
       let { page, pageSize, search } = req.query;
       page = +page > 0 ? +page : 1;
@@ -13,16 +13,17 @@ const articleService = {
 
       const skip = (page - 1) * pageSize;
 
+      const where = { content: { contains: search } };
       const articles = await prisma.articles.findMany({
          skip: skip,
          take: pageSize,
          orderBy: { createdAt: "desc" },
-         where: {
-            content: { contains: search },
-         },
+         where: where,
       });
 
-      const totalItem = await prisma.articles.count();
+      const totalItem = await prisma.articles.count({
+         where: where,
+      });
       const totalPage = Math.ceil(totalItem / pageSize);
 
       return {

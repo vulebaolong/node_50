@@ -50,7 +50,7 @@ const authService = {
       if (!userExsit) throw new BadRequestException(`Tài khoản chưa tồn tại, vui lòng đăng ký ::1`);
       // if (!userExsit) throw new BadRequestException(`Tài khoản không hợp lệ ::1`);
 
-      if(!userExsit?.password) throw new BadRequestException(`Vui lòng đăng nhập bằng google hoặc facebook, để cập nhật mật khẩu mới`);
+      if (!userExsit?.password) throw new BadRequestException(`Vui lòng đăng nhập bằng google hoặc facebook, để cập nhật mật khẩu mới`);
 
       const isPassword = bcrypt.compareSync(password, userExsit.password);
       if (!isPassword) {
@@ -123,7 +123,7 @@ const authService = {
 
       // nếu code chạy được xuống đây, thì userExist luôn tồn tại => có id
 
-      const tokensSystem = tokenService.createTokens(userExist.id)
+      const tokensSystem = tokenService.createTokens(userExist.id);
 
       return tokensSystem;
    },
