@@ -34,6 +34,7 @@ const authService = {
             password: hashPassword,
          },
       });
+      console.log({ userNew });
 
       delete userNew.password;
 

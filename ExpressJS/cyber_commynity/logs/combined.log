@@ -455,3 +455,242 @@
 {"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
 {"level":"info","message":"POST /auth/refresh-token 200 438 4.069ms","tag":" API "}
 {"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 31.220ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 14.241ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.657ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 11.861ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.855ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 400 370 49.537ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 8.814ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 4.872ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 98.624ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 403 1717 14.436ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.027ms","tag":" API "}
+{"level":"info","message":"GET /article/?page=1&pageSize=5 200 1489 360183.865ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET / 404 139 5.957ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 8.070ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 1445 0.802ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 200 154986 4.239ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 200 229223 8.617ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 200 1466908 3.952ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 200 628 0.995ms","tag":" API "}
+{"level":"info","message":"GET / 404 139 1.572ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 5.231ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.590ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 3.037ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 1555 0.525ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 4.755ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.445ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.285ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 5.858ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.759ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 3.309ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 1785 1.035ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 1.189ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.511ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.733ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 6.042ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 1.187ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 0.430ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 1969 1.592ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 1.799ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.679ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.499ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 3.655ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.289ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 4.122ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.459ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 22.131ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.384ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.342ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 1.267ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.173ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 1.828ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.363ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 1.848ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.417ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.510ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.727ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.588ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 2.196ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 0.962ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.195ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 1.183ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.438ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 5.201ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 3.648ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 4.057ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 2005 0.432ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 0.385ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.475ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 2.929ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.725ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.447ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 9.925ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 8.759ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 4.111ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.960ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.453ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.320ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.250ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 1.901ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 1.886ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 2.084ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.372ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.307ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.611ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.234ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 3.226ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 3.066ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 2.066ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.367ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.304ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.974ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.256ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.226ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 2.583ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 4.016ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.439ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.600ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 1.158ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.267ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 4.150ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 6.362ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 7.679ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.658ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.488ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.733ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.303ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.558ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 2.518ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 2.445ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.819ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.362ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.594ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.163ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 1.497ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 1.821ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 2.025ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.412ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.483ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.982ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 1.934ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 1.773ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 0.728ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.247ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.576ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.399ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 0.970ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.112ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 1.429ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 0.361ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.364ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.285ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.580ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 6.572ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.501ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 2.989ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 0.814ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 2137 0.665ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.369ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 1.136ms","tag":" API "}
+{"level":"info","message":"GET /article/ 401 1722 6.693ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/ 401 1722 7.758ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 4.130ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 2357 0.506ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 3.904ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 0.519ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 1.486ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.349ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.604ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 1.311ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 3.049ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 3.690ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.309ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 4.488ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.522ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.435ms","tag":" API "}
+{"level":"info","message":"GET /article/ 401 1722 2.834ms","tag":" API "}
+{"level":"info","message":"GET /article/ 401 1743 4.244ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 5.971ms","tag":" API "}
+{"level":"info","message":"GET /article/ 403 1717 3.467ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/refresh-token 200 438 6.101ms","tag":" API "}
+{"level":"info","message":"GET /article/ 200 975 183.639ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 6.670ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 5.797ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 3.218ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 2561 0.228ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 3.966ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.705ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.885ms","tag":" API "}
+{"level":"info","message":"GET /article/ 304 undefined 113.299ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /article/ 304 undefined 86.579ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 4.016ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 14.023ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 6.942ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 2864 0.865ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 2.574ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.985ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.485ms","tag":" API "}
+{"level":"info","message":"GET /article/ 304 undefined 29.675ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 7.545ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 6.069ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 8.068ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 3356 1.037ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 0.460ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.567ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.377ms","tag":" API "}
+{"level":"info","message":"GET /article/1 404 148 3.846ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 9.601ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 2.602ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 3.364ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 4125 0.464ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 1.333ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.775ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.424ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 75.877ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 9.940ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 3.271ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 0.747ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 5078 1.819ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 9.656ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.535ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.807ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 5.466ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 3.221ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 2.995ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 5186 0.284ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 1.528ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 304 undefined 2.462ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 304 undefined 0.546ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 10.293ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 10.971ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 10.812ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 1.617ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.834ms","tag":" API "}
