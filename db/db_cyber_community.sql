@@ -248,6 +248,23 @@ CREATE TABLE `RolePermission` (
 	`updatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
+CREATE TABLE `Chats` (
+	`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, -- mặc định luôn luôn có
+	
+	`message` TEXT,
+	`userIdSender` INT,
+	`userIdRecipient` INT,
+	
+	FOREIGN KEY (`userIdSender`) REFERENCES Users (`id`),
+	FOREIGN KEY (`userIdRecipient`) REFERENCES Users (`id`),	
+	
+	-- mặc định luôn luôn có
+	`deletedBy` INT NOT NULL DEFAULT 0,
+	`isDeleted` TINYINT(1) NOT NULL DEFAULT 0,
+	`deletedAt` TIMESTAMP NULL DEFAULT NULL,
+	`createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updatedAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
 
 
 

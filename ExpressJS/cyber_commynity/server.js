@@ -4,6 +4,10 @@ import { handleError } from "./src/common/helpers/error.helper";
 import logger from "./src/common/winston/init.winston";
 import logApi from "./src/common/morgan/init.morgan";
 import cors from "cors";
+import { createServer } from "http";
+import initSocket from "./src/common/socket/init.socket";
+
+
 
 const app = express();
 
@@ -19,6 +23,11 @@ app.use(
 app.use(rootRouter);
 app.use(handleError);
 
-app.listen(3069, () => {
+
+const httpServer = createServer(app);
+
+initSocket(httpServer)
+
+httpServer.listen(3069, () => {
   logger.info(`Server online at http://localhost:3069`, { tag: "SERVER" });
 });
