@@ -1241,3 +1241,136 @@
 {"level":"info","message":"GET /chat?page=1&userIdRecipient=26&pageSize=10 404 143 0.467ms","tag":" API "}
 {"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 404 143 1.742ms","tag":" API "}
 {"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 404 143 9.816ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 200 715 32.408ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 17.399ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 10.920ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=26&pageSize=10 404 143 0.679ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 4.360ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 14.751ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 6.335ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 404 143 0.334ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=26&pageSize=10 404 143 0.465ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 404 143 2.317ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 4.139ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 32.768ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 6.245ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 404 143 0.183ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 200 594 20.653ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 14.163ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 11.234ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 367 6.172ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 200 594 13.373ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 15.556ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 6.833ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 367 7.019ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 715 3.352ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 10.625ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 9.359ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=26&pageSize=10 200 367 5.201ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=26&pageSize=10 200 367 23.297ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 5.653ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 13.469ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 8.977ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 367 4.395ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 3.192ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 11.450ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 5.721ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2086 5.561ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=2&userIdRecipient=19&pageSize=10 200 368 14.114ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=5&pageSize=10 200 175 12.961ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 4.051ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 13.907ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 5.046ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=5&pageSize=10 200 1589 7.009ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=2&userIdRecipient=5&pageSize=10 200 175 8.085ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2086 8.787ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=2&userIdRecipient=19&pageSize=10 200 368 17.976ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 41.309ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 27.630ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 715 9.926ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 9.280ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 19.261ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=26&pageSize=10 200 2086 9.919ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 4.799ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 28.109ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 6.007ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=26&pageSize=10 200 2086 11.437ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2086 29.534ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 715 3.614ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 10.989ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 11.659ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 200 715 16.500ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 8.691ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 8.604ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 715 1.908ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 4.497ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 8.656ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 9.131ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 23.919ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 5.993ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2083 12.935ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2083 11.443ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 715 28.058ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 14.956ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 9.459ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 200 715 50.318ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 12.468ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 12.630ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 3.322ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 13.715ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 11.200ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2084 7.546ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 200 594 23.393ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 9.650ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 14.208ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2094 8.116ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 715 5.593ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 44.552ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 13.338ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2094 10.733ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 9.182ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 200 715 100.683ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 10.827ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 12.044ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 594 6.051ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 16.883ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 6.105ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2097 10.183ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2097 7.168ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /auth/get-info 200 594 42.780ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 10.562ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 7.797ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2101 7.646ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 715 3.290ms","tag":" API "}
+{"level":"info","message":"GET /article 200 975 10.256ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 5.896ms","tag":" API "}
+{"level":"info","message":"GET /chat?page=1&userIdRecipient=19&pageSize=10 200 2101 9.560ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3397 9.252ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}

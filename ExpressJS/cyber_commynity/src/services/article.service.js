@@ -3,7 +3,6 @@ import prisma from "../common/prisma/init.prisma";
 const articleService = {
    findAll: async (req) => {
       // console.log("dữ liệu ở service", req.user);
-
       let { page, pageSize, search } = req.query;
       page = +page > 0 ? +page : 1;
       pageSize = +pageSize > 0 ? +pageSize : 3;
