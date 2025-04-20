@@ -7,11 +7,10 @@ import cors from "cors";
 import { createServer } from "http";
 import initSocket from "./src/common/socket/init.socket";
 
-
-
 const app = express();
 
 // middleware
+app.use(express.static("."))
 app.use(express.json());
 app.use(logApi());
 app.use(

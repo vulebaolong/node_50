@@ -44,7 +44,10 @@ bcrypt: mã hoá password
 
 jsonwebtoken: tạo token, với thư viện jsonwebtoken
 
+graphql-http graphql: xử lý api graphql
+ruru: công cụ để gọi api graphql do chính graphql tạo ra
 
+multer: giúp nhận file, lưu file, validate file
 
 
 

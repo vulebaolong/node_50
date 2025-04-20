@@ -1,4 +1,6 @@
+import path from "path";
 import prisma from "../common/prisma/init.prisma";
+import fs from "fs";
 
 export const userService = {
    create: async function (req) {
@@ -47,5 +49,35 @@ export const userService = {
 
    remove: async function (req) {
       return `This action removes a id: ${req.params.id} user`;
+   },
+
+   avatarLocal: async function (req) {
+      console.log(req.file);
+      const file = req.file;
+      if (!file) {
+         throw new Error("No file upload");
+      }
+
+      const user = req.user;
+      const userId = Number(user.id);
+
+      if (user?.avatar) {
+         // nên dùng path để lấy ra đường dẫn chính xác trên mọi hệ điều hành (MacOS, linux, window)
+         const oldFilePath = path.join("images", user.avatar);
+         if (fs.existsSync(oldFilePath)) {
+            fs.unlinkSync(oldFilePath);
+         }
+      }
+
+      await prisma.users.update({
+         where: { id: userId },
+         data: { avatar: file.filename },
+      });
+
+      return {
+         folder: "images/",
+         filename: file.filename,
+         imgUrl: `images/${file.filename}`,
+      };
    },
 };

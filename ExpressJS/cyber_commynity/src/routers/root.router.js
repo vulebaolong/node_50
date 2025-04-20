@@ -8,8 +8,25 @@ import swaggerUi from "swagger-ui-express";
 import swaggerDocument from "../common/swagger/init.swagger";
 import userRouter from "./user.router";
 import chatRouter from "./chat.router";
+import schema from "../common/graphql/schema.graphql";
+import root from "../common/graphql/root.graphql";
+import { createHandler } from "graphql-http/lib/use/express";
+import ruru from "../common/graphql/ruru/init.ruru";
 
 const rootRouter = express.Router();
+
+rootRouter.get("/ruru", ruru);
+rootRouter.all(
+   "/graphql",
+   createHandler({
+      schema: schema,
+      rootValue: root,
+      context: (req) => {
+         const accssToken = req.headers?.authorization?.split(" ")[1];
+         return { accessToken: accssToken };
+      },
+   })
+);
 
 rootRouter.use("/api-docs", swaggerUi.serve);
 rootRouter.get("/api-docs", swaggerUi.setup(swaggerDocument, { swaggerOptions: { persistAuthorization: true } }));
