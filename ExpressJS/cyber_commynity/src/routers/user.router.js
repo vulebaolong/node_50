@@ -3,6 +3,7 @@ import { userController } from "../controller/user.controller";
 import protect from "../common/middlewares/protect.middleware";
 import uploadLocal from "../common/multer/local.multer";
 import productLocal from "../common/multer/product.multer";
+import uploadCloud from "../common/multer/cloud.multer";
 
 const userRouter = express.Router();
 
@@ -14,6 +15,6 @@ userRouter.patch("/:id", userController.update);
 userRouter.delete("/:id", userController.remove);
 
 userRouter.post("/avatar-local", protect, uploadLocal.single("avatar"), userController.avatarLocal);
-userRouter.post("/product-local", protect, productLocal.single("product"), userController.avatarLocal);
+userRouter.post("/avatar-cloud", protect, uploadCloud.single("avatar"), userController.avatarCloud);
 
 export default userRouter;

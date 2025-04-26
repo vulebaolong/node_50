@@ -1,6 +1,7 @@
 import path from "path";
 import prisma from "../common/prisma/init.prisma";
 import fs from "fs";
+import { v2 as cloudinary } from "cloudinary";
 
 export const userService = {
    create: async function (req) {
@@ -52,7 +53,7 @@ export const userService = {
    },
 
    avatarLocal: async function (req) {
-      console.log(req.file);
+      console.log(`avatarLocal`, req.file);
       const file = req.file;
       if (!file) {
          throw new Error("No file upload");
@@ -78,6 +79,53 @@ export const userService = {
          folder: "images/",
          filename: file.filename,
          imgUrl: `images/${file.filename}`,
+      };
+   },
+
+   avatarCloud: async function (req) {
+      console.log(`avatarCloud`, req.file);
+      const file = req.file;
+      if (!file) {
+         throw new Error("No file upload");
+      }
+
+      const user = req.user;
+      const userId = Number(user.id);
+
+      cloudinary.config({
+         cloud_name: "vulebaolong",
+         api_key: "375481467533217",
+         api_secret: "IdhzUoK7jRyQceWSIdUI2x86g24",
+      });
+
+      if (user?.avatar) {
+         console.log(user.avatar);
+         const oldFilePath = path.join("images", user.avatar);
+         if (fs.existsSync(oldFilePath)) {
+            fs.unlinkSync(oldFilePath);
+         }
+         await cloudinary.uploader.destroy(user.avatar);
+      }
+
+      const uploadResult = await new Promise((resolve) => {
+         cloudinary.uploader
+            .upload_stream({ folder: "images" }, (error, uploadResult) => {
+               return resolve(uploadResult);
+            })
+            .end(file.buffer);
+      });
+
+      console.log({ uploadResult });
+
+      await prisma.users.update({
+         where: { id: userId },
+         data: { avatar: uploadResult.public_id },
+      });
+
+      return {
+         folder: uploadResult.folder,
+         filename: file.filename,
+         imgUrl: uploadResult.secure_url,
       };
    },
 };

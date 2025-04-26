@@ -1496,3 +1496,63 @@
 {"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
 {"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
 {"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET / 404 139 2.814ms","tag":" API "}
+{"level":"info","message":"GET /api/ 404 143 1.489ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/ 200 3106 4.325ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 5186 0.303ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 200 154986 8.810ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 200 229223 6.550ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 200 1466908 10.123ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 200 628 1.052ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 1.901ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-local 403 1717 13.373ms","tag":" API "}
+{"level":"info","message":"POST /auth/refresh-token 200 438 2.962ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-local 403 1717 3.492ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 111.101ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /auth/login 200 435 75.265ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-local 400 1512 24.138ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /api-docs/ 304 undefined 2.749ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui.css 304 undefined 1.094ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-bundle.js 304 undefined 2.141ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-standalone-preset.js 304 undefined 0.697ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/swagger-ui-init.js 200 5322 0.356ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.358ms","tag":" API "}
+{"level":"info","message":"GET /api-docs/favicon-32x32.png 304 undefined 0.425ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-local 200 236 46.968ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /user/avatar-local 200 236 76.472ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-cloud 200 130 22.462ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /user/avatar-cloud 200 130 2486.366ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /user/avatar-cloud 200 243 5447.153ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-cloud 200 243 4017.208ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-cloud 200 243 2698.332ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /user/avatar-cloud 200 243 4360.735ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"POST /user/avatar-cloud 200 243 4449.722ms","tag":" API "}
+{"level":"info","message":"Server online at http://localhost:3069","tag":"SERVER"}
+{"level":"info","message":"GET /user?pageSize=100 401 1729 6.165ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 401 1743 1.007ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 401 1743 0.639ms","tag":" API "}
+{"level":"info","message":"POST /auth/google-login 500 902 270.552ms","tag":" API "}
+{"level":"info","message":"POST /auth/login 200 435 106.269ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3383 19.963ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 606 3.955ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 606 5.731ms","tag":" API "}
+{"level":"info","message":"GET /article 200 823 35.242ms","tag":" API "}
+{"level":"info","message":"GET /user?pageSize=100 200 3383 7.864ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 606 5.611ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-local 200 236 101.074ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 612 18.340ms","tag":" API "}
+{"level":"info","message":"POST /user/avatar-cloud 200 243 3594.762ms","tag":" API "}
+{"level":"info","message":"GET /auth/get-info 200 606 4.847ms","tag":" API "}

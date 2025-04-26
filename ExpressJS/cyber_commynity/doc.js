@@ -49,6 +49,8 @@ ruru: công cụ để gọi api graphql do chính graphql tạo ra
 
 multer: giúp nhận file, lưu file, validate file
 
+cloudinary: nơi lưu trữ ảnh trên đám mây
+
 
 
 

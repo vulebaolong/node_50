@@ -22,6 +22,10 @@ const protect = async (req, res, next) => {
          },
       });
 
+      if (!user) {
+         throw new UnAuthorizedException(`Không tìm thấy user`);
+      }
+
       req.user = user;
 
       next();

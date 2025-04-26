@@ -60,5 +60,14 @@ export const userController = {
       } catch (err) {
          next(err);
       }
+   },
+   avatarCloud: async function (req, res, next) {
+      try {
+         const result = await userService.avatarCloud(req);
+         const response = responseSuccess(result, `Upload avatar cloud successfully`);
+         res.status(response.statusCode).json(response);
+      } catch (err) {
+         next(err);
+      }
    }
 };
