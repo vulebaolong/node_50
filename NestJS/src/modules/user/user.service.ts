@@ -8,16 +8,12 @@ import { v2 as cloudinary, UploadApiResponse } from 'cloudinary';
 export class UserService {
   constructor(private readonly prismaService: PrismaService) {}
 
-  async uploadAvatarLocal(file: Express.Multer.File) {
+  async uploadAvatarLocal(file: Express.Multer.File, user: any) {
     console.log(`avatarLocal`, file);
     if (!file) {
       throw new Error('No file upload');
     }
 
-    //  vì chưa có logic protect kiểm tra token nên tạm thời fake lấy user trong prisma
-    const user = await this.prismaService.users.findUnique({
-      where: { id: 1 },
-    });
     if (!user) throw new BadRequestException(`Không tìm thấy user`);
     const userId = Number(user.id);
 
@@ -41,16 +37,12 @@ export class UserService {
     };
   }
 
-  async uploadAvatarCloud(file: Express.Multer.File) {
+  async uploadAvatarCloud(file: Express.Multer.File, user: any) {
     console.log(`avatarCloud`, file);
     if (!file) {
       throw new Error('No file upload');
     }
 
-    //  vì chưa có logic protect kiểm tra token nên tạm thời fake lấy user trong prisma
-    const user = await this.prismaService.users.findUnique({
-      where: { id: 1 },
-    });
     if (!user) throw new BadRequestException(`Không tìm thấy user`);
     const userId = Number(user.id);
 

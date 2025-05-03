@@ -4,6 +4,7 @@ import {
   MaxFileSizeValidator,
   ParseFilePipe,
   Post,
+  Req,
   UploadedFile,
   UseInterceptors,
 } from '@nestjs/common';
@@ -12,6 +13,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import uploadLocal from 'src/common/multer/local.multer';
 import { ApiBody, ApiConsumes } from '@nestjs/swagger';
 import { UploadAvatarDto } from './dto/upload-avatar.dto';
+import { Request } from 'express';
 
 @Controller('user')
 export class UserController {
@@ -34,8 +36,9 @@ export class UserController {
       }),
     )
     file: Express.Multer.File,
+    @Req() req: Request,
   ) {
-    return this.userService.uploadAvatarLocal(file);
+    return this.userService.uploadAvatarLocal(file, req.user);
   }
 
   @Post('avatar-cloud')
@@ -45,7 +48,10 @@ export class UserController {
     description: 'List of cats',
     type: UploadAvatarDto,
   })
-  uploadAvatarCloud(@UploadedFile() file: Express.Multer.File) {
-    return this.userService.uploadAvatarCloud(file);
+  uploadAvatarCloud(
+    @UploadedFile() file: Express.Multer.File,
+    @Req() req: Request,
+  ) {
+    return this.userService.uploadAvatarCloud(file, req.user);
   }
 }

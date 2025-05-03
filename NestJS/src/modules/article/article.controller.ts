@@ -8,17 +8,21 @@ import {
   Patch,
   Query,
   Req,
+  UseGuards,
 } from '@nestjs/common';
 import ArticleService from './article.service';
 import { Request } from 'express';
 import { UpdateArticleDto } from './dto/update-article.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { ProtectGuard } from '../auth/protect/protect.guard';
+import { SkipPermission } from 'src/common/decorator/skip-permission.decorator';
 
 @Controller('article')
-@ApiTags('Article - anh long')
+@ApiTags('Article')
 class ArticleController {
   constructor(public articleService: ArticleService) {}
-
+  
+  @SkipPermission()
   @Get('/')
   async findAll(
     @Req()
@@ -32,7 +36,7 @@ class ArticleController {
     @Query('search')
     search: string,
   ) {
-    // console.log({ query });
+    // console.log({ user: req.user });
     return await this.articleService.findAll(page, pageSize, search);
   }
 
