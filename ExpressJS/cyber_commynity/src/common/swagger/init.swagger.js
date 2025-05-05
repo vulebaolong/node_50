@@ -10,10 +10,6 @@ const swaggerDocument = {
    },
    servers: [
       {
-         url: "http://localhost:3069",
-         description: "Local Server",
-      },
-      {
          url: "https://cybercommunity.vercel.app",
          description: "Production Server",
       },

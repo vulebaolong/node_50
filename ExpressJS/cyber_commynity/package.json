@@ -9,7 +9,8 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --watchAll",
     "dev2": "node --watch server.js",
-    "dev": "nodemon --import=extensionless/register server.js"
+    "dev": "nodemon --import=extensionless/register server.js",
+    "start": "node --import=extensionless/register server.js"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",

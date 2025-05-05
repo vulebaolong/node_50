@@ -29,7 +29,21 @@ rootRouter.all(
 );
 
 rootRouter.use("/api-docs", swaggerUi.serve);
-rootRouter.get("/api-docs", swaggerUi.setup(swaggerDocument, { swaggerOptions: { persistAuthorization: true } }));
+
+rootRouter.get("/api-docs", (req, res, next) => {
+   // http://localhost:3069/api-docs/
+   const urlServerCurrent = `${req.protocol}://${req.get("host")}`;
+   const serverCurrent = swaggerDocument.servers.find((item) => {
+      if (item.url === urlServerCurrent) {
+         return true;
+      }
+   });
+   if(!serverCurrent) {
+      swaggerDocument.servers.unshift({ url: urlServerCurrent, description: "Server đang online" });
+   }
+   const handlerSwaggerUi = swaggerUi.setup(swaggerDocument, { swaggerOptions: { persistAuthorization: true } });
+   handlerSwaggerUi(req, res, next);
+});
 
 rootRouter.use(`/demo`, demoRouter);
 rootRouter.use(`/article`, articleRouter);
