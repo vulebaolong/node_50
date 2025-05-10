@@ -1,3 +1,10 @@
+# - x86 (chip intel): amd64
+#     - FROM --platform=linux/amd64 node:alpine
+#     - FROM --platform=linux/x86_64 node:alpine
+# - arm (chip apple): arm64
+#     - FROM --platform=linux/arm64 node:alpine
+
+
 # alpine: phiên bản node rút gọn
 FROM node:22.9.0-alpine
 

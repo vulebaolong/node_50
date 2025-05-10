@@ -21,6 +21,9 @@
  * 
  * list các image đang có:
  *    docker image list / docker image ls
+ * 
+ * đưa image lên docker hub:
+ *    docker push ten_hoac_id_cua_image
  *
  * CONTAINER ------------------------------------------
  * 
@@ -38,7 +41,49 @@
  *    docker container remove ten_hoac_id_cua_container
  *    docker container rm ten_hoac_id_cua_container
  * 
+ * dừng:
+ *    docker container stop ten_hoac_id_cua_container
+ * 
  * DOCKER-COMPOSE -------------------------------
- * docker-compose up -d
+ * docker compose up -d
+ * 
+ * docker compose down
+ * 
+ * câu lệnh dùng trong ubuntu
+ * 
+ *  ls -la: show tất cả các folder đang có
+ * 
+ * online runner không chiếm terminal:
+ *    - sudo ./svc.sh install
+ *    - sudo ./svc.sh start
+ * 
+ * đọc file:
+ *    - nano ten_file
+ * save file:
+ *    - ctrl + o
+ *    - ctrl + x: thoát
+ * 
+ * tạo file:
+ *    - touch ten_file
+ * 
+ * kẹp quyền sudo:
+ *    - sudo su
+ * thoát quyền sudo:
+ *    - exit
+ * 
+ * dùng nginx để dấu port:
+ * sudo apt update
+ * sudo apt install nginx
+ * 
+ * mở tệp cấu hình:
+ * sudo nano /etc/nginx/sites-available/default
+ * 
+ * xoá nhanh bên trong nano: ctrl + K
+ * 
+ * lệnh chạy kiểm tra xem cấu hình đã oke chưa:
+ * sudo nginx -t
+ * 
+ * lệnh khởi động nginx áp dụng các thay đổi của cấu hình:
+ * sudo systemctl restart nginx
  * 
  */

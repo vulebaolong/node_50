@@ -1,0 +1,29 @@
+name: CI
+
+# lắng nghe sự kiện
+on:
+   # lắng nghe sự kiện push
+   push:
+      # lắng nghe sự kiện push vào nhánh main
+      branches: [main]
+
+jobs:
+   # tên công việc mà github sẽ làm
+   build:
+      # chạy công việc có tên là build trên máy tính hệ điều hành ubuntu version mới nhất (latest)
+      runs-on: ubuntu-latest
+
+      steps:
+         # kéo source vào máy ảo ubuntu
+         - uses: actions/checkout@v4
+
+         - name: Đăng nhập vào docker hub 
+            # -u: tên tài khoản docker hub
+            # -p: mật khóa tài khoản docker hub 
+           run: docker login -u vulebaolong -p ${{secrets.DOCKER_PASSWORD}}
+
+         - name: build image
+           run: docker build -t vulebaolong/img-cyber_community:latest .
+
+         - name: push đưa image lên docker hub
+           run: docker push vulebaolong/img-cyber_community:latest
